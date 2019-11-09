@@ -83,7 +83,7 @@ def generate_forms():
         ))
 
     # Create sheet based on template forms
-    document = Document(os.getcwd() + '\\forms.docx')
+    document = Document(os.getcwd() + '\\_forms.docx')
     table = document.tables[0]
     header = table.cell(0, 0)
 
@@ -164,7 +164,7 @@ def generate_forms():
 
     for person in workers:
         # first_name, family_name, gender, birthday, citizenship, worker_role, identity, contact,picture_file
-        document = Document(os.getcwd() + '\\forms.docx')
+        document = Document(os.getcwd() + '\\_forms.docx')
         table = document.tables[0]
         add_first_name(person.first_name)
         add_family_name(person.family_name)
